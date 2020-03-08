@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'KMS',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.orange,
         canvasColor: Colors.transparent,
       ),
       home: MyHomePage(),
@@ -68,21 +68,41 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   TextFormField(),
                   SizedBox(height: 12.0),
-                  RaisedButton(
-                    splashColor: Colors.yellow,
+                  MaterialButton(
+                    height: 50.0,
+                    splashColor: Colors.orange,
                     textColor: Colors.white,
-                    color: Colors.yellow,
-                    onPressed: (){
+                    color: Colors.orange,
+                    onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => Dashboard()),
                       );
                     },
-                    child: Text(
-                      'Login',
-                      style: TextStyle(fontSize: 14.0, color: Colors.white),
+                    child: Center(
+                      child: Text(
+                        'Login',
+                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+                      ),
                     ),
                   ),
+//                  FlatButton(
+//                    splashColor: Colors.orange,
+//                    textColor: Colors.white,
+//                    color: Colors.orange,
+//                    onPressed: (){
+//                      Navigator.push(
+//                        context,
+//                        MaterialPageRoute(builder: (context) => Dashboard()),
+//                      );
+//                    },
+//                    child: Center(
+//                      child: Text(
+//                        'Login',
+//                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+//                      ),
+//                    ),
+//                  ),
                   SizedBox(height: 20.0),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
