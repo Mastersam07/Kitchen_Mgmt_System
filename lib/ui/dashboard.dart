@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kms/ui/adminscreen.dart';
 import 'package:kms/ui/karyakarta.dart';
+import 'package:kms/ui/mealscreen.dart';
 
 class Dashboard extends StatelessWidget {
   @override
@@ -163,39 +164,47 @@ class Dashboard extends StatelessWidget {
                   SizedBox(height: 50.0,),
                   Row(
                     children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.only(
-                          top: 30.0,
-                          bottom: 30.0,
-                          left: 30.0,
-                          right: 30.0,
-                        ),
-                        height: 180.0,
-                        width: 180.0,
-                        decoration: BoxDecoration(
-                          color: Colors.orange,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20.0),
-                            topLeft: Radius.circular(20.0),
-                            bottomLeft: Radius.circular(20.0),
-                            bottomRight: Radius.circular(20.0),
+                      InkWell(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MealScreen()),
+                          );
+                        },
+                        child: Container(
+                          padding: EdgeInsets.only(
+                            top: 30.0,
+                            bottom: 30.0,
+                            left: 30.0,
+                            right: 30.0,
                           ),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Icon(
-                                Icons.fastfood,
-                                size: 60.0,
-                                color: Colors.white,
-                              ),
-                            SizedBox(
-                              height: 5.0,
+                          height: 180.0,
+                          width: 180.0,
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(20.0),
+                              topLeft: Radius.circular(20.0),
+                              bottomLeft: Radius.circular(20.0),
+                              bottomRight: Radius.circular(20.0),
                             ),
-                            Text(
-                              'Meal',
-                              style: TextStyle(fontSize: 25.0, color: Colors.white),
-                            )
-                          ],
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Icon(
+                                  Icons.fastfood,
+                                  size: 60.0,
+                                  color: Colors.white,
+                                ),
+                              SizedBox(
+                                height: 5.0,
+                              ),
+                              Text(
+                                'Meal',
+                                style: TextStyle(fontSize: 25.0, color: Colors.white),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       SizedBox(
