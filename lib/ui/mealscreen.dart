@@ -14,15 +14,71 @@ class MealScreen extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: null,
+            onPressed: () {
+              showSearch(context: context, delegate: MealSearch());
+            },
           )
         ],
       ),
       body: ListView(
-        children: <Widget>[
-
-        ],
+        children: <Widget>[],
       ),
+    );
+  }
+}
+
+class MealSearch extends SearchDelegate<String> {
+  final cities = ["lagos", "Akure", "Ibadan", "Asaba"];
+
+  final recentCities = ["lagos", "Akure"];
+
+  @override
+  ThemeData appBarTheme(BuildContext context) {
+    assert(context != null);
+    final ThemeData theme = Theme.of(context);
+    assert(theme != null);
+    return theme;
+  }
+
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    // actions for app bar
+    return [
+      IconButton(
+        icon: Icon(Icons.clear),
+        onPressed: () {},
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    // leading icon on left of app bar
+    return IconButton(
+      icon: AnimatedIcon(
+        icon: AnimatedIcons.menu_arrow,
+        progress: transitionAnimation,
+      ),
+      onPressed: () {},
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // show some results based on the selection
+    return Container();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // show when someone searches for something
+    final suggestionlist = query.isEmpty ? recentCities : cities;
+    return ListView.builder(
+      itemBuilder: (context, index) => ListTile(
+        leading: Icon(Icons.location_city),
+        title: Text(suggestionlist[index]),
+      ),
+      itemCount: suggestionlist.length,
     );
   }
 }
