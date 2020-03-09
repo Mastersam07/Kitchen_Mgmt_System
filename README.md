@@ -1,5 +1,7 @@
 # kms
 
+[![Codemagic build status](https://api.codemagic.io/apps/5e667316c57c7a0012bc7344/5e667316c57c7a0012bc7343/status_badge.svg)](https://codemagic.io/apps/5e667316c57c7a0012bc7344/5e667316c57c7a0012bc7343/latest_build)
+
 A new Flutter application.
 
 ## Getting Started
