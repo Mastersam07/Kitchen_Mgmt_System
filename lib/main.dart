@@ -38,10 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
             //so you don't have to change MaterialApp canvasColor
             child: new Container(
               decoration: new BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: new BorderRadius.only(
-                      topLeft: const Radius.circular(40.0),
-                      topRight: const Radius.circular(40.0))),
+                color: Colors.white,
+                borderRadius: new BorderRadius.only(
+                  topLeft: const Radius.circular(40.0),
+                  topRight: const Radius.circular(40.0),
+                ),
+              ),
               child: new ListView(
                 padding: EdgeInsets.only(
                     bottom: 30.0, left: 30.0, right: 30.0, top: 30.0),
@@ -59,16 +61,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 12.0),
                   Text(
                     'Email Address',
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(fontSize: 15.0),
                   ),
-                  TextFormField(),
                   SizedBox(height: 12.0),
+                TextFormField(
+                  decoration: InputDecoration(
+                      labelText: 'Enter your email',
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide()
+                    ),
+                  ),
+                ),
+                SizedBox(height: 12.0),
                   Text(
                     'Password',
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(fontSize: 15.0),
                   ),
-                  TextFormField(),
                   SizedBox(height: 12.0),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Enter your password',
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide()
+                      ),
+                    ),
+                  ),
+                SizedBox(height: 12.0),
                   MaterialButton(
                     height: 50.0,
                     splashColor: Colors.orange,

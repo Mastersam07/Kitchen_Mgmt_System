@@ -21,7 +21,15 @@ class MealScreen extends StatelessWidget {
         ],
       ),
       body: ListView(
-        children: <Widget>[],
+        children: <Widget>[
+          Card(
+            child: ListTile(
+              title: Text("Arrival in PM", style: TextStyle(fontWeight: FontWeight.bold),),
+              trailing: Icon(Icons.more_vert),
+              subtitle: Text("Breakfast"),
+            ),
+          )
+        ],
       ),
     );
   }
@@ -78,12 +86,27 @@ class MealSearch extends SearchDelegate<String> {
   @override
   Widget buildSuggestions(BuildContext context) {
     // show when someone searches for something
-    final suggestionlist = query.isEmpty ? recentCities : cities;
+    final suggestionlist = query.isEmpty
+        ? recentCities
+        : cities.where((p) => p.startsWith(query)).toList();
     return Container();
 //    return ListView.builder(
 //      itemBuilder: (context, index) => ListTile(
 //        leading: Icon(Icons.location_city),
-//        title: Text(suggestionlist[index]),
+//        title: RichText(
+//          text: TextSpan(
+//              text: suggestionlist[index].substring(0, query.length),
+//              style: TextStyle(
+//                fontWeight: FontWeight.bold,
+//                color: Colors.black,
+//              ),
+//              children: [
+//                TextSpan(
+//                  text: suggestionlist[index].substring(query.length),
+//                  style: TextStyle(color: Colors.grey),
+//                )
+//              ]),
+//        ),
 //      ),
 //      itemCount: suggestionlist.length,
 //    );
