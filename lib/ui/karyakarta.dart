@@ -158,9 +158,13 @@ class Karyakarta extends StatelessWidget {
             padding: EdgeInsets.all(20.0),
             width: 60.0,
             child: RaisedButton(
-              color: Colors.orange,
-              splashColor: Colors.orange,
-              child: Text('Add New'),
+              disabledColor: Colors.orange,
+              splashColor: Colors.white,
+              child: Text(
+                'Add New',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
               onPressed: null,
             ),
           ),

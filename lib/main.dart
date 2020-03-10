@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'KMS',
       theme: ThemeData(
         primarySwatch: Colors.orange,
-        canvasColor: Colors.transparent,
+//        canvasColor: Colors.transparent,
         backgroundColor: Colors.white,
       ),
       home: MyHomePage(),
@@ -105,21 +105,21 @@ class _MyHomePageState extends State<MyHomePage> {
 //                    ),
 //                  ),
                   SizedBox(height: 20.0),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: <Widget>[
-                      Text(
-                        'Create New account',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(color: Colors.yellow, fontSize: 20.0),
-                      ),
-                      Text(
-                        'Forgot Password?',
-                        textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.yellow, fontSize: 20.0),
-                      ),
-                    ],
-                  )
+//                  Row(
+//                    crossAxisAlignment: CrossAxisAlignment.end,
+//                    children: <Widget>[
+//                      Text(
+//                        'Create New account',
+//                        textAlign: TextAlign.left,
+//                        style: TextStyle(color: Colors.yellow, fontSize: 20.0),
+//                      ),
+//                      Text(
+//                        'Forgot Password?',
+//                        textAlign: TextAlign.right,
+//                        style: TextStyle(color: Colors.yellow, fontSize: 20.0),
+//                      ),
+//                    ],
+//                  )
                 ],
               ),
             ),

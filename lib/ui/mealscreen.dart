@@ -45,8 +45,11 @@ class MealSearch extends SearchDelegate<String> {
     // actions for app bar
     return [
       IconButton(
+        color: Colors.white,
         icon: Icon(Icons.clear),
-        onPressed: () {},
+        onPressed: () {
+          query = "";
+        },
       ),
     ];
   }
@@ -56,10 +59,13 @@ class MealSearch extends SearchDelegate<String> {
     // leading icon on left of app bar
     return IconButton(
       icon: AnimatedIcon(
+        color: Colors.white,
         icon: AnimatedIcons.menu_arrow,
         progress: transitionAnimation,
       ),
-      onPressed: () {},
+      onPressed: () {
+        close(context, null);
+      },
     );
   }
 
@@ -73,12 +79,13 @@ class MealSearch extends SearchDelegate<String> {
   Widget buildSuggestions(BuildContext context) {
     // show when someone searches for something
     final suggestionlist = query.isEmpty ? recentCities : cities;
-    return ListView.builder(
-      itemBuilder: (context, index) => ListTile(
-        leading: Icon(Icons.location_city),
-        title: Text(suggestionlist[index]),
-      ),
-      itemCount: suggestionlist.length,
-    );
+    return Container();
+//    return ListView.builder(
+//      itemBuilder: (context, index) => ListTile(
+//        leading: Icon(Icons.location_city),
+//        title: Text(suggestionlist[index]),
+//      ),
+//      itemCount: suggestionlist.length,
+//    );
   }
 }
