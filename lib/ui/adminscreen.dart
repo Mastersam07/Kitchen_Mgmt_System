@@ -1,7 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AdminScreen extends StatelessWidget {
+class AdminScreen extends StatefulWidget {
+  @override
+  _AdminScreenState createState() => _AdminScreenState();
+}
+
+
+class _AdminScreenState extends State<AdminScreen> {
+
+  int _value1 = 0;
+
+  void _setValue1(int value) => setState(() => _value1 = value);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -355,6 +366,24 @@ class AdminScreen extends StatelessWidget {
                             Text(
                               "Role",
                               style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Radio(value: 0, groupValue: _value1, onChanged: _setValue1),
+                                Text('Admin'),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Radio(value: 1, groupValue: _value1, onChanged: _setValue1),
+                                Text('Karyakarta'),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Radio(value: 2, groupValue: _value1, onChanged: _setValue1),
+                                Text('Events'),
+                              ],
                             ),
                             Spacer(),
                             SizedBox(
