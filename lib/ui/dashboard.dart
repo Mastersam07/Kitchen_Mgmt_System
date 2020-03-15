@@ -49,8 +49,9 @@ class Dashboard extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              height: 300.0,
-              padding: EdgeInsets.only(top: 30.0, left: 20.0, bottom: 30.0),
+//              height: 300.0,
+              padding: EdgeInsets.only(
+                  top: 30.0, left: 20.0, bottom: 30.0, right: 20.0),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
@@ -58,33 +59,35 @@ class Dashboard extends StatelessWidget {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      InkWell(
-                        onTap: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => AdminScreen()),
-                          );
-                        },
-                        child: Container(
-                          padding: EdgeInsets.only(
-                            top: 30.0,
-                            bottom: 30.0,
-                            left: 30.0,
-                            right: 30.0,
-                          ),
-                          height: 180.0,
-                          width: 180.0,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(20.0),
-                              topLeft: Radius.circular(20.0),
-                              bottomLeft: Radius.circular(20.0),
-                              bottomRight: Radius.circular(20.0),
+                      Expanded(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AdminScreen()),
+                            );
+                          },
+                          child: Container(
+                            padding: EdgeInsets.only(
+                              top: 30.0,
+                              bottom: 30.0,
+                              left: 30.0,
+                              right: 30.0,
                             ),
-                          ),
-                          child: Column(
-                            children: <Widget>[
+                            height: 180.0,
+                            width: 180.0,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20.0),
+                                topLeft: Radius.circular(20.0),
+                                bottomLeft: Radius.circular(20.0),
+                                bottomRight: Radius.circular(20.0),
+                              ),
+                            ),
+                            child: Column(
+                              children: <Widget>[
 //                              InkWell(
 //                                onTap: (){
 //                                  Navigator.push(
@@ -102,75 +105,127 @@ class Dashboard extends StatelessWidget {
                                   radius: 40.0,
                                 ),
 //                              ),
-                              SizedBox(
-                                height: 5.0,
-                              ),
-                              Text(
-                                'Admin',
-                                style: TextStyle(fontSize: 25.0, color: Colors.white),
-                              )
-                            ],
+                                SizedBox(
+                                  height: 5.0,
+                                ),
+                                Text(
+                                  'Admin',
+                                  style: TextStyle(
+                                      fontSize: 25.0, color: Colors.white),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        width: 10.0,
+                        width: 20.0,
                       ),
-                      InkWell(
-                        onTap: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Karyakarta()),
-                          );
-                        },
-                        child: Container(
-                          padding: EdgeInsets.only(
-                            top: 30.0,
-                            bottom: 30.0,
-                            left: 30.0,
-                            right: 30.0,
-                          ),
-                          height: 180.0,
-                          width: 180.0,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(20.0),
-                              topLeft: Radius.circular(20.0),
-                              bottomLeft: Radius.circular(20.0),
-                              bottomRight: Radius.circular(20.0),
+                      Expanded(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Karyakarta()),
+                            );
+                          },
+                          child: Container(
+                            padding: EdgeInsets.only(
+                              top: 30.0,
+                              bottom: 30.0,
+                              left: 30.0,
+                              right: 30.0,
                             ),
-                          ),
-                          child: Column(
-                            children: <Widget>[
-                              Icon(
+                            height: 180.0,
+                            width: 180.0,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20.0),
+                                topLeft: Radius.circular(20.0),
+                                bottomLeft: Radius.circular(20.0),
+                                bottomRight: Radius.circular(20.0),
+                              ),
+                            ),
+                            child: Column(
+                              children: <Widget>[
+                                Icon(
                                   Icons.people,
                                   size: 80.0,
                                   color: Colors.white,
                                 ),
-                              SizedBox(
-                                height: 5.0,
-                              ),
-                              Text(
-                                'Karyakarta',
-                                style: TextStyle(fontSize: 20.0, color: Colors.white),
-                              )
-                            ],
+                                SizedBox(
+                                  height: 5.0,
+                                ),
+                                Text(
+                                  'Karyakarta',
+                                  style: TextStyle(
+                                      fontSize: 20.0, color: Colors.white),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 50.0,),
+                  SizedBox(
+                    height: 50.0,
+                  ),
                   Row(
                     children: <Widget>[
-                      InkWell(
-                        onTap: (){
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => MealScreen()),
-                          );
-                        },
+                      Expanded(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MealScreen()),
+                            );
+                          },
+                          child: Container(
+                            padding: EdgeInsets.only(
+                              top: 30.0,
+                              bottom: 30.0,
+                              left: 30.0,
+                              right: 30.0,
+                            ),
+                            height: 180.0,
+                            width: 180.0,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20.0),
+                                topLeft: Radius.circular(20.0),
+                                bottomLeft: Radius.circular(20.0),
+                                bottomRight: Radius.circular(20.0),
+                              ),
+                            ),
+                            child: Column(
+                              children: <Widget>[
+                                Icon(
+                                  Icons.fastfood,
+                                  size: 60.0,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(
+                                  height: 5.0,
+                                ),
+                                Text(
+                                  'Meal',
+                                  style: TextStyle(
+                                      fontSize: 25.0, color: Colors.white),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Expanded(
                         child: Container(
                           padding: EdgeInsets.only(
                             top: 30.0,
@@ -192,57 +247,20 @@ class Dashboard extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Icon(
-                                  Icons.fastfood,
-                                  size: 60.0,
-                                  color: Colors.white,
-                                ),
-                              SizedBox(
-                                height: 5.0,
-                              ),
-                              Text(
-                                'Meal',
-                                style: TextStyle(fontSize: 25.0, color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Container(
-                        padding: EdgeInsets.only(
-                          top: 30.0,
-                          bottom: 30.0,
-                          left: 30.0,
-                          right: 30.0,
-                        ),
-                        height: 180.0,
-                        width: 180.0,
-                        decoration: BoxDecoration(
-                          color: Colors.orange,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20.0),
-                            topLeft: Radius.circular(20.0),
-                            bottomLeft: Radius.circular(20.0),
-                            bottomRight: Radius.circular(20.0),
-                          ),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Icon(
                                 Icons.settings,
                                 size: 80.0,
                                 color: Colors.white,
                               ),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              'Settings',
-                              style: TextStyle(fontSize: 25.0, color: Colors.white),
-                            )
-                          ],
+                              SizedBox(
+                                height: 5.0,
+                              ),
+                              Text(
+                                'Settings',
+                                style: TextStyle(
+                                    fontSize: 25.0, color: Colors.white),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],

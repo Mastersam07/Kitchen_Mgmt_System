@@ -22,136 +22,228 @@ class AdminScreen extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-            height: 80.0,
-            child: ListTile(
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            height: MediaQuery.of(context).size.height * 0.15,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
                 children: <Widget>[
-                  new Text(
-                    'Some Nigga',
-                    style: new TextStyle(fontWeight: FontWeight.bold),
+                  Padding(padding: EdgeInsets.only(left: 10.0)),
+                  CircleAvatar(
+                    radius: 30.0,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.orange,
+                      size: 50.0,
+                    ),
                   ),
-                  new Icon(Icons.more_vert),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Pramukh swami Maharaj',
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Pramukhswami@gmail.com',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                          child: Text(
+                        'Role: Admin',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            backgroundColor: Colors.orangeAccent),
+                      )),
+                    ],
+                  ),
+                  Spacer(),
+                  IconButton(
+                      disabledColor: Colors.black,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: null)
                 ],
               ),
-              subtitle: new Container(
-                padding: const EdgeInsets.only(top: 5.0),
-                child: new Text(
-                  'Sub title',
-                  style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 15.0),
-                ),
-              ),
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person,
-                  color: Colors.orange,
-                  size: 30.0,
-                ),
-              ),
             ),
-          ),
-          Divider(
-            thickness: 2.0,
           ),
           Container(
-            height: 80.0,
-            child: ListTile(
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            height: MediaQuery.of(context).size.height * 0.15,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
                 children: <Widget>[
-                  new Text(
-                    'Some Nigga',
-                    style: new TextStyle(fontWeight: FontWeight.bold),
+                  Padding(padding: EdgeInsets.only(left: 10.0)),
+                  CircleAvatar(
+                    radius: 30.0,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.orange,
+                      size: 50.0,
+                    ),
                   ),
-                  new Icon(Icons.more_vert),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Pramukh swami Maharaj',
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Pramukhswami@gmail.com',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                          child: Text(
+                        'Role: Admin',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            backgroundColor: Colors.orangeAccent),
+                      )),
+                    ],
+                  ),
+                  Spacer(),
+                  IconButton(
+                      disabledColor: Colors.black,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: null)
                 ],
               ),
-              subtitle: new Container(
-                padding: const EdgeInsets.only(top: 5.0),
-                child: new Text(
-                  'Sub title',
-                  style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 15.0),
-                ),
-              ),
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person,
-                  color: Colors.orange,
-                  size: 30.0,
-                ),
-              ),
             ),
-          ),
-          Divider(
-            thickness: 2.0,
           ),
           Container(
-            height: 80.0,
-            child: ListTile(
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            height: MediaQuery.of(context).size.height * 0.15,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
                 children: <Widget>[
-                  new Text(
-                    'Some Nigga',
-                    style: new TextStyle(fontWeight: FontWeight.bold),
+                  Padding(padding: EdgeInsets.only(left: 10.0)),
+                  CircleAvatar(
+                    radius: 30.0,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.orange,
+                      size: 50.0,
+                    ),
                   ),
-                  new Icon(Icons.more_vert),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Pramukh swami Maharaj',
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Pramukhswami@gmail.com',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                          child: Text(
+                        'Role: Admin',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            backgroundColor: Colors.orangeAccent),
+                      )),
+                    ],
+                  ),
+                  Spacer(),
+                  IconButton(
+                      disabledColor: Colors.black,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: null)
                 ],
               ),
-              subtitle: new Container(
-                padding: const EdgeInsets.only(top: 5.0),
-                child: new Text(
-                  'Sub title',
-                  style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 15.0),
-                ),
-              ),
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person,
-                  color: Colors.orange,
-                  size: 30.0,
-                ),
-              ),
             ),
-          ),
-          Divider(
-            thickness: 2.0,
           ),
           Container(
-            height: 80.0,
-            child: ListTile(
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            height: MediaQuery.of(context).size.height * 0.15,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
                 children: <Widget>[
-                  new Text(
-                    'Some Nigga',
-                    style: new TextStyle(fontWeight: FontWeight.bold),
+                  Padding(padding: EdgeInsets.only(left: 10.0)),
+                  CircleAvatar(
+                    radius: 30.0,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.orange,
+                      size: 50.0,
+                    ),
                   ),
-                  new Icon(Icons.more_vert),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Pramukh swami Maharaj',
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Pramukhswami@gmail.com',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                          child: Text(
+                        'Role: Admin',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            backgroundColor: Colors.orangeAccent),
+                      )),
+                    ],
+                  ),
+                  Spacer(),
+                  IconButton(
+                      disabledColor: Colors.black,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: null)
                 ],
               ),
-              subtitle: new Container(
-                padding: const EdgeInsets.only(top: 5.0),
-                child: new Text(
-                  'Sub title',
-                  style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 15.0),
-                ),
-              ),
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person,
-                  color: Colors.orange,
-                  size: 30.0,
-                ),
-              ),
             ),
-          ),
-          Divider(
-            thickness: 2.0,
           ),
           Container(
             height: 100.0,
@@ -167,142 +259,124 @@ class AdminScreen extends StatelessWidget {
               ),
               onPressed: () {
                 showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return Dialog(
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.circular(20.0)), //this right here
-                        child: Container(
-                          width: MediaQuery.of(context).size.width - 10,
-                          height: MediaQuery.of(context).size.height - 80,
-                          child: Padding(
-                            padding: const EdgeInsets.all(12.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: <Widget>[
-                                    Text(
-                                      'Add Admin',
-                                      style: TextStyle(
-                                        fontSize: 20.0,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                    IconButton(
-                                      icon: Icon(Icons.clear),
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                    ),
-                                  ],
-                                ),
-                                Divider(
-                                  thickness: 2.0,
-                                ),
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Dialog(
+                      shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.circular(20.0)), //this right here
+//                        child: Container(
+//                          width: MediaQuery.of(context).size.width - 5,
+//                          height: MediaQuery.of(context).size.height - 80,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
                                 Text(
-                                  "Name",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(height: 12.0),
-                                TextFormField(
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderSide: BorderSide()
-                                    ),
+                                  'Add Admin',
+                                  style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
                                   ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                SizedBox(height: 12.0),
-                                Text(
-                                  "Email Address",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                IconButton(
+                                  icon: Icon(Icons.clear),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
                                 ),
-                                SizedBox(height: 12.0),
-                              TextFormField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderSide: BorderSide()
-                                  ),
-                                ),
-                              ),
-                                SizedBox(height: 12.0),
-                                Text(
-                                  "Password",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(height: 12.0),
-                                TextFormField(
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderSide: BorderSide()
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 12.0),
-                                Text(
-                                  "Confirm Password",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(height: 12.0),
-                                TextFormField(
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderSide: BorderSide()
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 12.0),
-                                Text(
-                                  "Role",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                Spacer(),
-                                SizedBox(
-                                  width: 320.0,
-                                  child: RaisedButton(
-                                    onPressed: () {},
-                                    child: Text(
-                                      "Save",
-                                      style: TextStyle(color: Colors.white),
-                                    ),
-                                    color: Colors.orange,
-                                  ),
-                                )
                               ],
                             ),
-                          ),
+                            Divider(
+                              thickness: 2.0,
+                            ),
+                            Text(
+                              "Name",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 12.0),
+                            Expanded(
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderSide: BorderSide()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 12.0),
+                            Text(
+                              "Email Address",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 12.0),
+                            Expanded(
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderSide: BorderSide()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 12.0),
+                            Text(
+                              "Password",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 12.0),
+                            Expanded(
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderSide: BorderSide()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 12.0),
+                            Text(
+                              "Confirm Password",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 12.0),
+                            Expanded(
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderSide: BorderSide()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 12.0),
+                            Text(
+                              "Role",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Spacer(),
+                            SizedBox(
+                              width: 320.0,
+                              child: RaisedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "Save",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                color: Colors.orange,
+                              ),
+                            )
+                          ],
                         ),
-                      );
-                    });
+                      ),
+                    );
+                  },
+                );
               },
             ),
           ),
-//          Align(
-//            alignment: Alignment.bottomCenter,
-//            child: MaterialButton(
-//              height: 50.0,
-//              splashColor: Colors.orange,
-//              textColor: Colors.white,
-//              color: Colors.orange,
-//              onPressed: () {
-////                Navigator.push(
-////                  context,
-////                  MaterialPageRoute(builder: (context) => Dashboard()),
-////                );
-//              },
-//              child: Center(
-//                child: Text(
-//                  'Add New',
-//                  style: TextStyle(fontSize: 20.0, color: Colors.white),
-//                ),
-//              ),
-//            ),
-//          )
         ],
       ),
     );
