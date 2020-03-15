@@ -22,13 +22,130 @@ class MealScreen extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Card(
-            child: ListTile(
-              title: Text("Arrival in PM", style: TextStyle(fontWeight: FontWeight.bold),),
-              trailing: Icon(Icons.more_vert),
-              subtitle: Text("Breakfast"),
+          Container(
+            height: MediaQuery.of(context).size.height * 0.25,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Arrival in PM',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Breakfast',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Expected Count',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text('200', style: TextStyle(backgroundColor: Colors.orangeAccent),),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Start Time',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text('9:00 AM', style: TextStyle(backgroundColor: Colors.orangeAccent),),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(''),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(''),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Actual Count',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        '185',
+                        style: TextStyle(backgroundColor: Colors.green),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'End Time',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        '11:00 AM',
+                        style: TextStyle(backgroundColor: Colors.green),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Text(
+                        '14 May 2020',
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      IconButton(
+                      disabledColor: Colors.black,
+                      icon: Icon(Icons.more_vert),
+                      onPressed: null),
+                    ],
+                  ),
+                ],
+              ),
+//                  IconButton(
+//                      disabledColor: Colors.black,
+//                      icon: Icon(Icons.more_vert),
+//                      onPressed: null)
+//                ],
+//              ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -86,9 +203,9 @@ class MealSearch extends SearchDelegate<String> {
   @override
   Widget buildSuggestions(BuildContext context) {
     // show when someone searches for something
-    final suggestionlist = query.isEmpty
-        ? recentCities
-        : cities.where((p) => p.startsWith(query)).toList();
+//    final suggestionlist = query.isEmpty
+//        ? recentCities
+//        : cities.where((p) => p.startsWith(query)).toList();
     return Container();
 //    return ListView.builder(
 //      itemBuilder: (context, index) => ListTile(
