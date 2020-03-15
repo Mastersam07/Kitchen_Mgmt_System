@@ -23,7 +23,7 @@ class MealScreen extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height * 0.25,
+            height: MediaQuery.of(context).size.height * 0.3,
             width: MediaQuery.of(context).size.width,
             child: Card(
               child: Row(
@@ -169,7 +169,7 @@ class MealScreen extends StatelessWidget {
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height * 0.25,
+            height: MediaQuery.of(context).size.height * 0.3,
             width: MediaQuery.of(context).size.width,
             child: Card(
               child: Row(
