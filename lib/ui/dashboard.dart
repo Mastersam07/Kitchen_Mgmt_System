@@ -11,16 +11,14 @@ class Dashboard extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Container(
+            height: MediaQuery.of(context).size.height * 0.25,
             padding: EdgeInsets.only(
               top: 60.0,
               bottom: 30.0,
               left: 30.0,
               right: 30.0,
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Row(
+            child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Text(
@@ -41,11 +39,11 @@ class Dashboard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 100.0,
-                ),
-              ],
-            ),
+//                SizedBox(
+//                  height: 100.0,
+//                ),
+//              ],
+//            ),
           ),
           Expanded(
             child: Container(
