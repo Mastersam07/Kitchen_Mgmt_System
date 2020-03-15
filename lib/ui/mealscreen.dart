@@ -37,14 +37,13 @@ class MealScreen extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'Arrival in PM',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 10.0,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                        ),
                       ),
                       Text(
                         'Breakfast',
-                        style: TextStyle(color: Colors.black),
                       ),
                       SizedBox(
                         height: 10.0,
@@ -52,26 +51,40 @@ class MealScreen extends StatelessWidget {
                       Text(
                         'Expected Count',
                         style: TextStyle(
-                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
-                      Text('200', style: TextStyle(backgroundColor: Colors.orangeAccent),),
+                      Container(
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '200',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                       SizedBox(
                         height: 10.0,
                       ),
                       Text(
                         'Start Time',
                         style: TextStyle(
-                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
-                      Text('9:00 AM', style: TextStyle(backgroundColor: Colors.orangeAccent),),
+                      Container(
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '9:00 AM',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -91,14 +104,20 @@ class MealScreen extends StatelessWidget {
                       ),
                       Text(
                         'Actual Count',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
-                      Text(
-                        '185',
-                        style: TextStyle(backgroundColor: Colors.green),
+                      Container(
+                        color: Colors.green,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '185',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       ),
                       SizedBox(
                         height: 10.0,
@@ -106,44 +125,193 @@ class MealScreen extends StatelessWidget {
                       Text(
                         'End Time',
                         style: TextStyle(
-                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
-                      Text(
-                        '11:00 AM',
-                        style: TextStyle(backgroundColor: Colors.green),
+                      Container(
+                        padding: EdgeInsets.all(5.0),
+                        color: Colors.orangeAccent,
+                        child: Text(
+                          '11:00 AM',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),
                   SizedBox(
                     width: 10.0,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      Text(
-                        '14 May 2020',
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text(
+                            '14 May 2020',
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          IconButton(
+                              disabledColor: Colors.black,
+                              icon: Icon(Icons.more_vert),
+                              onPressed: null),
+                        ],
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      IconButton(
-                      disabledColor: Colors.black,
-                      icon: Icon(Icons.more_vert),
-                      onPressed: null),
                     ],
                   ),
                 ],
               ),
-//                  IconButton(
-//                      disabledColor: Colors.black,
-//                      icon: Icon(Icons.more_vert),
-//                      onPressed: null)
-//                ],
-//              ),
+            ),
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height * 0.25,
+            width: MediaQuery.of(context).size.width,
+            child: Card(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Arrival in PM',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                        ),
+                      ),
+                      Text(
+                        'Breakfast',
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Expected Count',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '200',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Start Time',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '9:00 AM',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(''),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(''),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Actual Count',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        color: Colors.green,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          '185',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'End Time',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(5.0),
+                        color: Colors.orangeAccent,
+                        child: Text(
+                          '11:00 AM',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Text(
+                            '14 May 2020',
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          IconButton(
+                              disabledColor: Colors.black,
+                              icon: Icon(Icons.more_vert),
+                              onPressed: null),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
