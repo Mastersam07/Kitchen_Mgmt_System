@@ -187,13 +187,13 @@ class Karyakarta extends StatelessWidget {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -243,13 +243,13 @@ class Karyakarta extends StatelessWidget {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -299,13 +299,13 @@ class Karyakarta extends StatelessWidget {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -355,13 +355,13 @@ class Karyakarta extends StatelessWidget {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -463,7 +463,7 @@ class Karyakarta extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Text(
-                                    'abadasosp@gmail.com',
+                                    'Pramukhswami@gmail.com',
                                     style: TextStyle(
                                       fontSize: 15.0,
                                     ),
@@ -486,7 +486,7 @@ class Karyakarta extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Text(
-                                    'abadasosp@gmail.com',
+                                    'Pramukhswami@gmail.com',
                                     style: TextStyle(
                                       fontSize: 15.0,
                                     ),
@@ -509,7 +509,7 @@ class Karyakarta extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Text(
-                                    'abadasosp@gmail.com',
+                                    'Pramukhswami@gmail.com',
                                     style: TextStyle(
                                       fontSize: 15.0,
                                     ),

@@ -6,9 +6,7 @@ class AdminScreen extends StatefulWidget {
   _AdminScreenState createState() => _AdminScreenState();
 }
 
-
 class _AdminScreenState extends State<AdminScreen> {
-
   int _value1 = 0;
 
   void _setValue1(int value) => setState(() => _value1 = value);
@@ -70,13 +68,13 @@ class _AdminScreenState extends State<AdminScreen> {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -126,13 +124,13 @@ class _AdminScreenState extends State<AdminScreen> {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -182,13 +180,13 @@ class _AdminScreenState extends State<AdminScreen> {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -238,13 +236,13 @@ class _AdminScreenState extends State<AdminScreen> {
                         height: 10.0,
                       ),
                       Container(
-                          child: Text(
-                        'Role: Admin',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            backgroundColor: Colors.orangeAccent),
-                      )),
+                        color: Colors.orangeAccent,
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          'Role: Admin',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -281,28 +279,24 @@ class _AdminScreenState extends State<AdminScreen> {
 //                          height: MediaQuery.of(context).size.height - 80,
                       child: Padding(
                         padding: const EdgeInsets.all(12.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        child: ListView(
+//                          mainAxisAlignment: MainAxisAlignment.start,
+//                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  'Add Admin',
-                                  style: TextStyle(
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
+                            ListTile(
+                              title: Text(
+                                'Add Admin',
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold,
                                 ),
-                                IconButton(
-                                  icon: Icon(Icons.clear),
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                ),
-                              ],
+                              ),
+                              trailing: IconButton(
+                                icon: Icon(Icons.clear),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
                             ),
                             Divider(
                               thickness: 2.0,
@@ -312,12 +306,10 @@ class _AdminScreenState extends State<AdminScreen> {
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 12.0),
-                            Expanded(
-                              child: TextFormField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderSide: BorderSide()),
-                                ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderSide: BorderSide()),
                               ),
                             ),
                             SizedBox(height: 12.0),
@@ -326,12 +318,10 @@ class _AdminScreenState extends State<AdminScreen> {
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 12.0),
-                            Expanded(
-                              child: TextFormField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderSide: BorderSide()),
-                                ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderSide: BorderSide()),
                               ),
                             ),
                             SizedBox(height: 12.0),
@@ -340,12 +330,10 @@ class _AdminScreenState extends State<AdminScreen> {
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 12.0),
-                            Expanded(
-                              child: TextFormField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderSide: BorderSide()),
-                                ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderSide: BorderSide()),
                               ),
                             ),
                             SizedBox(height: 12.0),
@@ -354,12 +342,10 @@ class _AdminScreenState extends State<AdminScreen> {
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 12.0),
-                            Expanded(
-                              child: TextFormField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderSide: BorderSide()),
-                                ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderSide: BorderSide()),
                               ),
                             ),
                             SizedBox(height: 12.0),
@@ -369,23 +355,31 @@ class _AdminScreenState extends State<AdminScreen> {
                             ),
                             Row(
                               children: <Widget>[
-                                Radio(value: 0, groupValue: _value1, onChanged: _setValue1),
+                                Radio(
+                                    value: 0,
+                                    groupValue: _value1,
+                                    onChanged: _setValue1),
                                 Text('Admin'),
                               ],
                             ),
                             Row(
                               children: <Widget>[
-                                Radio(value: 1, groupValue: _value1, onChanged: _setValue1),
+                                Radio(
+                                    value: 1,
+                                    groupValue: _value1,
+                                    onChanged: _setValue1),
                                 Text('Karyakarta'),
                               ],
                             ),
                             Row(
                               children: <Widget>[
-                                Radio(value: 2, groupValue: _value1, onChanged: _setValue1),
+                                Radio(
+                                    value: 2,
+                                    groupValue: _value1,
+                                    onChanged: _setValue1),
                                 Text('Events'),
                               ],
                             ),
-                            Spacer(),
                             SizedBox(
                               width: 320.0,
                               child: RaisedButton(
